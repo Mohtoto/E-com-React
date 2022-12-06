@@ -15,7 +15,7 @@ const Book = ({ book }) => {
     image.src = book.url;
     image.onload = () => {
       setTimeout(() => {
-        if (mountedRef.current) {
+         {
           setImg(image);
         }
       }, 300);
@@ -34,6 +34,7 @@ const Book = ({ book }) => {
           <div className="skeleton book__title--skeleton"></div>
           <div className="skeleton book__rating--skeleton"></div>
           <div className="skeleton book__price--skeleton"></div>
+          
         </>
       ) : (
         <>
